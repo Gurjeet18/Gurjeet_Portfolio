@@ -3,95 +3,254 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gurjeet_Resume</title>
+    <meta name="description" content="Welcome to Gurjeet's Portfolio. Front-End Web Developer" />
+    <link id='favicon' rel="shortcut icon" href="Avatar.jpg" type="image/x-jpg">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Portfolio | Gurjeet Singh</title>
 </head>
+<style>
+    *{
+        font-size: 25px;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* CSS on Header */
+    header{
+        /* position: sticky;
+        top: 1rem;
+        z-index: 30; */
+    }
+    .navbar{
+        background-color: #38B6FF;
+        border-radius: 14px;
+        margin: 3px;
+    }
+    .navbar ul{
+        overflow: auto;
+    }
+    .navbar li{
+        float: left;
+        list-style: none;
+        margin: 12px 25px;
+    }
+    .navbar li a{
+        padding: 3px 3px;
+        text-decoration: none;
+        color: black;
+    }
+    .navbar li a:hover{
+        background-color: white;
+        color: #38B6FF;
+        border-radius: 10px;
+    }
+
+    /* CSS on Class container */
+    .container{
+        /* border: 7px solid #38B6FF; */
+        margin: 5px;
+        padding: 50px;
+    }
+
+    /* CSS on Class container2*/
+    .container2{
+        margin: 30px;
+    }
+
+    /* CSS on hr tags */
+    hr{
+        color: #38B6FF;
+        width: 1140px;
+        border: 3px solid #38B6FF;
+        margin: 10px;
+        position: relative;
+        top: 15px;
+    }
+
+    /* CSS on h2 tags */
+    h2{
+        height: 35px;
+        justify-content: center;
+        align-items: center;
+        text-align: center; 
+        position: relative;
+        bottom: 15px;
+        background-color: #38B6FF;
+        width: 0ch;
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: 2px solid black; /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        letter-spacing: .15em; /* Adjust as needed */
+        animation: text 6s steps(38) infinite alternate;
+    }
+    @keyframes text {
+    0%{ width: 0ch}
+    50%{ width: 38ch }
+    }
+    @keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black; }
+}
+    
+    /* CSS on Personal details */
+    .personal_details{
+        display: inline-block;
+        position: relative;
+        bottom: 40px;
+        left: 200px;
+        text-align: center;
+    }
+    .personal_details h1{
+        text-decoration: underline;
+        font-size: 40px;
+    }
+    .personal_details p{
+        font-size: 35px;
+    }
+
+    /* CSS on Skills */
+    #E li{
+        
+        font-weight: 700;
+        list-style: url(../img/check.png);
+    }
+    .div1{
+        display: inline-block;
+        position: relative;
+        left: 5%;
+    }
+    .div2{
+        display: inline-block;
+        position: relative;
+        left: 25%;
+    }
+    .div3{
+        display: inline-block;
+        position: relative;
+        left: 45%;
+    }
+
+    /* CSS on Education */
+    .education li{
+        list-style: none;
+        line-height: 35px;
+    }
+
+    /* CSS on Footer */
+    .footer{
+        text-align: center;
+    }
+
+</style>
 <body>
-    <div>
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <span><li><a href="#career objective">CAREER OBJECTIVE</a></li></span>
+                    <span><li><a href="#skills">SKILLS</a></li></span>
+                    <span><li><a href="#professional experience">PROFESSIONAL EXPERIENCE</a></li></span>
+                    <span><li><a href="#relevant projects">RELEVANT PROJECTS</a></li></span>
+                    <span><li><a href="#education">EDUCATION</a></li></span>
+                </ul>
+            </nav>
+        </header>
 
-        <div>
-            <h1>GURJEET SINGH || QA & QC</h1>
-            <p>Address : Meerut , U.P.</p>
-            <p>Mobile Number : +91 7302909927</p>
-            <p>Email : <a href="mailto:gurjeetqa@gmail.com">gurjeetqa@gmail.com</a></p>
-            <p>Linkedin : <a href="https://www.linkedin.com/in/gurjeet-singh-a02b7221b">linkedin.com/gurjeet-singh</a></p>
-            <p>GitHun : <a href="https://github.com/Gurjeet18">github.com/Gurjeet18</a></p>
+    <div class="container">
+        <div class="container2">
+            <div class="personal_details">
+                <h1>GURJEET SINGH || QA & QC</h1>
+                <br>
+                <p> Meerut , U.P. | +91 7302909927 | gurjeetqa@gmail.com</p>
+                <p><img src="../img/linkedin.png" alt="linkedin" width="30px" height="30px"> <a href="https://www.linkedin.com/in/gurjeet-singh-a02b7221b"> /Gurjeet Singh</a> <img src="../img/github.png" alt="github" width="40px" height="30px"><a href="https://github.com/Gurjeet18"> /Gurjeet18</a></p>
+            </div>
+            <hr>
+            <div class="career objective" id="career objective">
+                <section>
+                <h2>CAREER OBJECTIVE</h2>
+                <p>Professional QA/QC with 1 year of hands-on experience in ensuring software quality. Seeking to leverage my expertise in creating effective test strategies, executing thorough manual testing, and collaborating with cross-functional teams to contribute to the delivery of high-quality software products. Eager to further develop my skills in test automation while continuing to excel in maintaining software integrity and optimizing user experiences.</p>
+                </section>
+            </div>
+            <hr>
+            <div class="skills" id="skills">
+                <section>
+                <h2>SKILLS</h2>
+                <ul id="E">
+                    <div class="div1">
+                        <li>Manual Testing</li>
+                        <li>API Testing</li>
+                        <li>Performance Testing</li>
+                        <li>Load Testing</li>
+                        <li>Agile Methodologies</li>
+                    </div>
+                    <div class="div2">
+                        <li>Jira Management Tool</li>
+                        <li>Git & GitHub</li>
+                        <li>Postman</li>
+                        <li>My SQL</li>
+                        <li>Jmeter</li>
+                    </div>
+                    <div class="div3">
+                        <li>Java</li>
+                        <li>Html</li>
+                        <li>Css</li>
+                        <li>Javascript</li>
+                        <li>Cypress</li>
+                    </div>
+                </ul>
+                </section>
+            </div>
+            <hr>
+            <div class="professional experience" id="professional experience">
+                <section>
+                <h2>PROFESSIONAL EXPERIENCE</h2>
+                <h3><u>Benchwork</u></h3>
+                <p>Quality Analyst | Sep, 2022 - Aug, 2023</p>
+                <ul>
+                    <li>Collaborated closely with development and product team to understand project requirements, user stories, and acceptance criteria.</li>
+                    <li>Created detailed test plans and strategies, outlining testing scope, objectives, and methodologies for each project.</li>
+                    <li>Developed comprehensive test cases and test scripts based on project requirements, ensuring full test coverage.</li>
+                    <li>Conducted thorough manual testing(functional & non-functional) ,API testing, across various platforms, devices, and environments to identify defects and issues.</li>
+                    <li>Documented defects accurately using bug tracking tools, provided clear and concise bug reports, and communicated effectively with developers for timely resolution.</li>
+                    <li>Participated in regular regression testing to ensure the stability of existing features and prevent regressions in software updates.</li>
+                    <li>Attended daily stand-up meetings to provide testing status updates and discuss any critical issues affecting the testing process.</li>
+                    <li>Contributed to cross-functional team meetings, offering insights and suggestions to enhance software quality and user experience.</li>
+                    <li>Initiated and actively participated in knowledge-sharing sessions to improve testing methodologies and share best practices.</li>
+                    <li>Took the initiative to learn and implement basic test automation concepts, including writing and executing automated test scripts using [automation tool/framework].</li>
+                </ul>
+                </section>
+            </div>
+            <hr>
+            <div class="relevant projects" id="relevant projects">
+                <section>
+                <h2>RELEVANT PROJECTS</h2>
+                <h3><u>Carakart</u></h3>
+                <ul>
+                    <li>Carakart is an E-commerce Marketplace for Dental Products like Instruments, Medical devices, tools, etc.</li>
+                    <li>Responsibilities: Interact With The Application(Front-End & Back-End), Write Test Scenarios, Write Test Cases & Review, Requirements Traceability Matrix (RTM), Environment Setup & Build Deployment, Test Execution, Defect Reporting, Test Sign Off, API Testing, Performance Testing, Load Testing.</li>
+                </ul>
+                </section>
+            </div>
+            <hr>
+            <div class="education" id="education">
+                <section>
+                <h2>EDUCATION</h2>
+                <ul>
+                    <li>Swami Vivekanand Subharti University | 2022 <p>BSc - Mathematics</p></li>
+                    <li>K.V .Public School, Meerut | 2018 <p>12th - CBSC</p></li>
+                    <li>K.V .Public School, Meerut | 2016 <p>10th - CBSC</p></li>
+                </ul>
+                </section>
+            </div>
+            <hr><br>
+            <div class="footer">
+                <footer>
+                &#169; 2023 Gurjeet Singh. All rights reserved.
+                </footer>
+            </div>
+    
         </div>
-
-        <section>
-            <h2>CAREER OBJECTIVE</h2>
-            <p>Looking for a job as a Software tester, where my skills in the technical field will be useful and I should think about my career to grow as a Software tester.</p>
-        </section>
-
-        <section>
-            <h2>SKILLS</h2>
-            <ul>
-                <li>Manual Testing</li>
-                <li>API Testing</li>
-                <li>Performance Testing</li>
-                <li>Load Testing</li>
-                <li>Agile Methodologies</li>
-                <li>Jira Management Tool</li>
-                <li>Git & GitHub</li>
-                <li>Postman</li>
-                <li>My SQL</li>
-                <li>Jmeter</li>
-                <li>Java</li>
-                <li>Html</li>
-                <li>CSS</li>
-                <li>Javascript</li>
-                <li>Cypress</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>PROFESSIONAL EXPERIENCE</h2>
-            <h3><u>Techugo</u></h3>
-            <p>Quality Analyst Trainee | Dec, 2022 - March, 2022</p>
-            <ul>
-                <li>Create cases, Test Scenarios, Test data and Bug Reporting For different applications.</li>
-                <li>Performed Functional Testing, User Acceptance Testing, Regression Testing, Re-Testing, Sanity Testing and Smoke Testing.</li>
-                <li>Software development life cycle (SDLC) and Software testing life cycle (STLC).</li>
-            </ul>
-
-            <h3><u>Benchwork</u></h3>
-            <p>Quality Analyst Intern | March, 2022 - Present</p>
-            <ul>
-                <li>Create cases, Test Scenarios, Test data and Bug Reporting For different applications.</li>
-                <li>Performed Functional Testing, User Acceptance Testing, Regression Testing, Re-Testing, API Testing, Performance Testing, Load Testing, Sanity Testing and Smoke Testing.</li>
-                <li>Software development life cycle (SDLC) and Software testing life cycle (STLC).</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>RELEVANT PROJECTS</h2>
-            <h3><u>Humpy A2</u></h3>
-            <ul>
-                <li>Humpy A2 is an ecommerce software. This software is funding by the Shark Tank India.</li>
-                <li>Responsibilities: Interact With The Application, Write Test Scenarios, Write Test Cases & Review, Requirements Traceability Matrix (RTM), Environment Setup & Build Deployment, Test Execution, Defect Reporting, Test Sign Off.</li>
-            </ul>
-
-            <h3><u>Carakart</u></h3>
-            <ul>
-                <li>Carakart is an E-commerce Marketplace for Dental Products like Instruments, Medical devices, tools, etc.</li>
-                <li>Responsibilities: Interact With The Application(Front-End & Back-End), Write Test Scenarios, Write Test Cases & Review, Requirements Traceability Matrix (RTM), Environment Setup & Build Deployment, Test Execution, Defect Reporting, Test Sign Off, API Testing, Performance Testing, Load Testing.</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>EDUCATION</h2>
-            <ul>
-                <li>Swami Vivekanand Subharti University | 2022 <p>BSc - Mathematics</p></li>
-                <li>K.V .Public School, Meerut | 2018 <p>12th - CBSC</p></li>
-                <li>K.V .Public School, Meerut | 2016 <p>10th - CBSC</p></li>
-            </ul>
-        </section>
-
-        <br />
-
-        <footer>
-            &#169; 2023 Gurjeet Singh. All rights reserved.
-        </footer>
-
     </div>
 </body>
 </html>
